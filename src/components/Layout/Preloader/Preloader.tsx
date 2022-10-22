@@ -1,5 +1,5 @@
 import React from "react";
-import { SyncOutlined } from "@ant-design/icons";
+import {SyncOutlined} from "@ant-design/icons";
 
 const Preloader: React.FC = () => {
 
@@ -16,7 +16,7 @@ const Preloader: React.FC = () => {
         color: "white",
       }}
     >
-      FL<SyncOutlined spin />W
+      FL<SyncOutlined spin/>W
     </div>
   )
 }

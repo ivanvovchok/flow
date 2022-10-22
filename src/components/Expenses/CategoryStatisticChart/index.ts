@@ -1,1 +1,1 @@
-export { default } from './CategoryStatisticChart'
+export {default} from './CategoryStatisticChart'

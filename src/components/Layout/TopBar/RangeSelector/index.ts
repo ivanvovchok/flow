@@ -1,1 +1,1 @@
-export { default } from './RangeSelector'
+export {default} from './RangeSelector'

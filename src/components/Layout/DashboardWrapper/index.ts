@@ -1,1 +1,1 @@
-export { default } from './DashboardWrapper'
+export {default} from './DashboardWrapper'

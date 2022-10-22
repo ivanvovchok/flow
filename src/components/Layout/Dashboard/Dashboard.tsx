@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Row, Col, Tabs, BackTop } from 'antd';
+import {BackTop, Col, Layout, Row, Tabs} from 'antd';
 import TopBar from "../TopBar/TopBar";
 import OverviewChart from "../../Expenses/OverviewChart";
 import DailyStatisticChart from "../../Expenses/DailyStatisticChart";
@@ -7,21 +7,20 @@ import CategoryStatisticChart from "../../Expenses/CategoryStatisticChart";
 import FeaturedCategorySection from "../../Expenses/FeaturedCategoriesSection";
 import DataTable from "../../Expenses/DataTable";
 
-const { Footer, Content } = Layout;
+const {Footer, Content} = Layout;
 
 const Dashboard: React.FC = () => {
-
   return (
     <Layout
       style={{
         padding: 16,
         borderRadius: 16,
-        backgroundColor:'white',
+        backgroundColor: 'white',
       }}
     >
-      <BackTop />
+      <BackTop/>
       <TopBar total={266}/>
-      <Content style={{ marginTop: 0 }}>
+      <Content style={{marginTop: 0}}>
         <Row gutter={24}>
           <Col span={12}>
             <Tabs centered defaultActiveKey="1">
@@ -44,12 +43,12 @@ const Dashboard: React.FC = () => {
             </Tabs>
           </Col>
         </Row>
-        <Row style={{ marginTop: 20 }}>
+        <Row style={{marginTop: 20}}>
           <Col span={24}>
-            <FeaturedCategorySection />
+            <FeaturedCategorySection/>
           </Col>
         </Row>
-        <Row style={{ marginTop: 20 }}>
+        <Row style={{marginTop: 20}}>
           <Col span={24}>
             <DataTable/>
           </Col>

@@ -1,1 +1,1 @@
-export { default } from './FeaturedCategoryChart'
+export {default} from './FeaturedCategoryChart'

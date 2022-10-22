@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from 'antd';
+import {Table} from 'antd';
 import useDataTable from "./useDataTable";
 
 const DataTable: React.FC = () => {

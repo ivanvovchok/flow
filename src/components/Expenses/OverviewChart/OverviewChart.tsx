@@ -1,11 +1,11 @@
 import React from 'react';
-import { Pie } from '@ant-design/plots';
+import {Pie} from '@ant-design/plots';
 import useOverviewChart from "./useOverviewChart";
 
 const OverviewChart: React.FC = () => {
-  const { config } = useOverviewChart();
+  const {config} = useOverviewChart();
 
-  return(
+  return (
     <Pie {...config} />
   );
 }

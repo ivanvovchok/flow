@@ -1,11 +1,11 @@
 import React from "react";
-import { TinyArea } from '@ant-design/plots';
+import {TinyArea} from '@ant-design/plots';
 import useFeaturedCategoryChart from "./useFeaturedCategoryChart";
 
 const FeaturedCategoryChart: React.FC = () => {
-  const { config } = useFeaturedCategoryChart();
+  const {config} = useFeaturedCategoryChart();
 
-  return(
+  return (
     <TinyArea {...config} />
   )
 }

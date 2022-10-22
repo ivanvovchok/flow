@@ -1,1 +1,1 @@
-export { default } from './FeaturedCategorySection'
+export {default} from './FeaturedCategorySection'

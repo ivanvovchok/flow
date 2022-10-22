@@ -1,11 +1,11 @@
 import React from "react";
-import { Line } from '@ant-design/plots';
+import {Line} from '@ant-design/plots';
 import useDailyStatisticChart from "./useDailyStatisticChart";
 
 const DailyStatisticChart: React.FC = () => {
-  const { config } = useDailyStatisticChart();
+  const {config} = useDailyStatisticChart();
 
-  return(
+  return (
     <Line {...config} />
   );
 }

@@ -1,11 +1,11 @@
 import React from "react";
-import { Column } from '@ant-design/plots';
+import {Column} from '@ant-design/plots';
 import useCategoryStatisticChart from "./useCategoryStatisticChart";
 
 const CategoryStatisticChart: React.FC = () => {
-  const { config } = useCategoryStatisticChart();
+  const {config} = useCategoryStatisticChart();
 
-  return(
+  return (
     <Column {...config} />
   );
 }
