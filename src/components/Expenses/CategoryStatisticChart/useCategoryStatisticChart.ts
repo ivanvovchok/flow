@@ -37,11 +37,11 @@ const useDailyStatisticChart = () => {
       },
     },
     meta: {
-      type: {
-        alias: 'test',
+      category: {
+        alias: 'Категорія',
       },
-      sales: {
-        alias: 'test',
+      amount: {
+        alias: 'Сума',
       },
     },
   };

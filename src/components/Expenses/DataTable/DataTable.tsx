@@ -9,7 +9,7 @@ const DataTable: React.FC = () => {
   } = useDataTable()
 
   return (
-    <Table size={"small"} bordered dataSource={data} columns={columns}/>
+    <Table dataSource={data} columns={columns}/>
   )
 }
 

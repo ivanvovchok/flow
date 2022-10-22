@@ -10,7 +10,7 @@ function App() {
 
   setTimeout(() => {
     setIsLoaded(true);
-  }, 2000);
+  }, 3000);
 
   return (
     <DashboardWrapper>
