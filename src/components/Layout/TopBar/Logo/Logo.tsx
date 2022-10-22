@@ -9,7 +9,7 @@ const Logo: () => JSX.Element = () => {
       paddingLeft: 10,
       fontSize: 28,
       fontWeight: 200,
-      color: "#C850C0",
+      color: "#0093E9",
     }}>FL<SyncOutlined />W</h1>
   )
 }

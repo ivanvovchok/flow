@@ -10,14 +10,12 @@ interface ITopBarProps {
 
 const TopBar: React.FC<ITopBarProps> = ({total}) => {
   return (
-    <Row align={"middle"}>
+    <Row>
       <Col span={4}>
-        <Row align={"middle"}>
           <Logo />
-        </Row>
       </Col>
       <Col span={20}>
-        <Row justify={"end"} align={"middle"}>
+        <Row style={{ position: 'fixed', right: 32, zIndex: 100}}>
           <Button
             shape={"circle"}
             type={"primary"}
@@ -38,7 +36,7 @@ const TopBar: React.FC<ITopBarProps> = ({total}) => {
             }}
           />
           <Popover content={<UserCard/>} placement={"bottomRight"}>
-            <Avatar size={"large"} style={{ backgroundColor: '#FFCC70', cursor: 'pointer' }} icon={<UserOutlined />} />
+            <Avatar size={"large"} style={{ backgroundColor: 'orange', cursor: 'pointer' }} icon={<UserOutlined />} />
           </Popover>
         </Row>
       </Col>
