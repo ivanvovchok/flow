@@ -2,6 +2,7 @@ import React from 'react';
 import { Layout, Row, Col } from 'antd';
 import TopBar from "../TopBar/TopBar";
 import OverviewChart from "../../Expenses/OverviewChart";
+import StatisticChart from "../../Expenses/StatisticChart";
 import DataTable from "../../Expenses/DataTable";
 
 const { Footer, Content } = Layout;
@@ -22,9 +23,10 @@ const Dashboard: React.FC = () => {
             <OverviewChart/>
           </Col>
           <Col span={12}>
-            <DataTable/>
+            <StatisticChart/>
           </Col>
         </Row>
+        <DataTable/>
       </Content>
 
       <Footer>Footer</Footer>
