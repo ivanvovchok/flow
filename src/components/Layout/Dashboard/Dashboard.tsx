@@ -3,6 +3,7 @@ import { Layout, Row, Col, Tabs } from 'antd';
 import TopBar from "../TopBar/TopBar";
 import OverviewChart from "../../Expenses/OverviewChart";
 import DailyStatisticChart from "../../Expenses/DailyStatisticChart";
+import CategoryStatisticChart from "../../Expenses/CategoryStatisticChart";
 import DataTable from "../../Expenses/DataTable";
 
 const { Footer, Content } = Layout;
@@ -36,7 +37,7 @@ const Dashboard: React.FC = () => {
                 <DailyStatisticChart/>
               </Tabs.TabPane>
               <Tabs.TabPane tab="По категоріям" key="2">
-                <DailyStatisticChart/>
+                <CategoryStatisticChart/>
               </Tabs.TabPane>
             </Tabs>
 
