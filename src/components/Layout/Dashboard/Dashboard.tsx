@@ -8,6 +8,7 @@ import DataTable from "../../Expenses/DataTable";
 const { Footer, Content } = Layout;
 
 const Dashboard: React.FC = () => {
+
   return (
     <Layout
       style={{

@@ -1,6 +1,8 @@
 import React from 'react';
-import { Row, Col, Button } from 'antd';
-import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
+import { Row, Col, Button, Avatar, Popover } from 'antd';
+import { PlusOutlined, MinusOutlined, UserOutlined } from '@ant-design/icons';
+import Logo from "./Logo";
+import UserCard from "./UserCard";
 
 interface ITopBarProps {
   total: number
@@ -8,36 +10,39 @@ interface ITopBarProps {
 
 const TopBar: React.FC<ITopBarProps> = ({total}) => {
   return (
-      <Row align={"middle"}>
-        <Col span={24}>
-          <Row justify={"end"} align={"middle"}>
-            <div
-              style={{
-                marginRight:20,
-                fontSize:22,
-              }}
-            >
-              ₴ {total}
-            </div>
-            <Button
-              shape={"circle"}
-              type={"primary"}
-              size={"large"}
-              icon={<PlusOutlined/>}
-              style={{
-                marginRight:10
-              }}
-            />
-            <Button
-              shape={"round"}
-              type={"primary"}
-              size={"large"}
-              danger
-              icon={<MinusOutlined/>}
-            />
-          </Row>
-        </Col>
-      </Row>
+    <Row align={"middle"}>
+      <Col span={4}>
+        <Row align={"middle"}>
+          <Logo />
+        </Row>
+      </Col>
+      <Col span={20}>
+        <Row justify={"end"} align={"middle"}>
+          <Button
+            shape={"circle"}
+            type={"primary"}
+            size={"large"}
+            icon={<PlusOutlined/>}
+            style={{
+              marginRight:10
+            }}
+          />
+          <Button
+            shape={"round"}
+            type={"primary"}
+            size={"large"}
+            danger
+            icon={<MinusOutlined/>}
+            style={{
+              marginRight:10
+            }}
+          />
+          <Popover content={<UserCard/>} placement={"bottomRight"}>
+            <Avatar size={"large"} style={{ backgroundColor: '#FFCC70' }} icon={<UserOutlined />} />
+          </Popover>
+        </Row>
+      </Col>
+    </Row>
   )
 }
 
