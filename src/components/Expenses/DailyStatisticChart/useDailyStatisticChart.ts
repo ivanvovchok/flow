@@ -4,7 +4,7 @@ interface DataType {
   amount: number;
 }
 
-const useStatisticChart = () => {
+const useDailyStatisticChart = () => {
 
   const data: DataType[] = [
     {
@@ -49,7 +49,7 @@ const useStatisticChart = () => {
     },
     {
       category: 'Транспорт',
-      date: '04.01.2022',
+      date: '03.01.2022',
       amount: 50
     },
   ];
@@ -78,5 +78,5 @@ const useStatisticChart = () => {
   };
 }
 
-export default useStatisticChart
+export default useDailyStatisticChart
 
