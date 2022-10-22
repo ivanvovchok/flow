@@ -1,5 +1,5 @@
 import React from "react";
-import { RedoOutlined } from "@ant-design/icons";
+import { SyncOutlined } from "@ant-design/icons";
 
 const Logo: () => JSX.Element = () => {
 
@@ -10,7 +10,7 @@ const Logo: () => JSX.Element = () => {
       fontSize: 28,
       fontWeight: 200,
       color: "#C850C0",
-    }}>FL<RedoOutlined spin />W</h1>
+    }}>FL<SyncOutlined />W</h1>
   )
 }
 
