@@ -3,6 +3,7 @@ import { Row, Col, Button, Avatar, Popover } from 'antd';
 import { PlusOutlined, MinusOutlined, UserOutlined } from '@ant-design/icons';
 import Logo from "./Logo";
 import UserCard from "./UserCard";
+import RangeSelector from "./RangeSelector";
 
 interface ITopBarProps {
   total: number
@@ -11,11 +12,12 @@ interface ITopBarProps {
 const TopBar: React.FC<ITopBarProps> = ({total}) => {
   return (
     <Row>
-      <Col span={4}>
+      <Col span={8}>
           <Logo />
       </Col>
-      <Col span={20}>
+      <Col span={16}>
         <Row style={{ position: 'fixed', right: 32, zIndex: 100}}>
+          <RangeSelector />
           <Button
             shape={"circle"}
             type={"primary"}
