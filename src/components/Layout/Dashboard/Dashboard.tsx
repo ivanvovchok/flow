@@ -11,8 +11,8 @@ const Dashboard: React.FC = () => {
   return (
     <Layout
       style={{
-        margin:20,
-        borderRadius:10,
+        padding: 16,
+        borderRadius: 10,
         backgroundColor:'white',
       }}
     >
