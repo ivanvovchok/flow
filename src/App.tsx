@@ -1,11 +1,14 @@
 import React from 'react';
 import Dashboard from "./components/Layout/Dashboard";
+import DashboardWrapper from "./components/Layout/DashboardWrapper";
 
 import 'antd/dist/antd.css';
 
 function App() {
   return (
-    <Dashboard/>
+    <DashboardWrapper>
+      <Dashboard/>
+    </DashboardWrapper>
   );
 }
 
