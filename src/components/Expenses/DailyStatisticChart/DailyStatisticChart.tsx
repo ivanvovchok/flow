@@ -2,7 +2,7 @@ import React from "react";
 import { Line } from '@ant-design/plots';
 import useDailyStatisticChart from "./useDailyStatisticChart";
 
-const DaiylStatisticChart: React.FC = () => {
+const DailyStatisticChart: React.FC = () => {
   const { config } = useDailyStatisticChart();
 
   return(
@@ -10,4 +10,4 @@ const DaiylStatisticChart: React.FC = () => {
   );
 }
 
-export default DaiylStatisticChart
+export default DailyStatisticChart

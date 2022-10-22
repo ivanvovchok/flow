@@ -1,1 +1,1 @@
-export { default } from './DaiylStatisticChart'
+export { default } from './DailyStatisticChart'

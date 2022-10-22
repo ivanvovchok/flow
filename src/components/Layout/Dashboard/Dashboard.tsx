@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout, Row, Col, Tabs } from 'antd';
 import TopBar from "../TopBar/TopBar";
 import OverviewChart from "../../Expenses/OverviewChart";
-import DaiylStatisticChart from "../../Expenses/DailyStatisticChart";
+import DailyStatisticChart from "../../Expenses/DailyStatisticChart";
 import DataTable from "../../Expenses/DataTable";
 
 const { Footer, Content } = Layout;
@@ -33,10 +33,10 @@ const Dashboard: React.FC = () => {
           <Col span={12}>
             <Tabs centered defaultActiveKey="1">
               <Tabs.TabPane tab="По дням" key="1">
-                <DaiylStatisticChart/>
+                <DailyStatisticChart/>
               </Tabs.TabPane>
               <Tabs.TabPane tab="По категоріям" key="2">
-                <DaiylStatisticChart/>
+                <DailyStatisticChart/>
               </Tabs.TabPane>
             </Tabs>
 
