@@ -1,8 +1,8 @@
 import React from 'react';
 import { Layout, Row, Col } from 'antd';
-import TopBar from "../TopBar";
-import ExpenseChart from "../ExpenseChart";
-import ExpenseTable from "../ExpenseTable";
+import TopBar from "../TopBar/TopBar";
+import OverviewChart from "../../Expenses/OverviewChart";
+import DataTable from "../../Expenses/DataTable";
 
 const { Footer, Content } = Layout;
 
@@ -19,10 +19,10 @@ const Dashboard: React.FC = () => {
       <Content style={{ marginTop:40 }}>
         <Row gutter={24}>
           <Col span={12}>
-            <ExpenseChart/>
+            <OverviewChart/>
           </Col>
           <Col span={12}>
-            <ExpenseTable/>
+            <DataTable/>
           </Col>
         </Row>
       </Content>

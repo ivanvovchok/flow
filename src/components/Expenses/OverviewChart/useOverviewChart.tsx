@@ -1,6 +1,6 @@
 import React from 'react';
 
-const useExpenseChart = () => {
+const useOverviewChart = () => {
   const data = [
     {
       type: '分类一',
@@ -70,4 +70,4 @@ const useExpenseChart = () => {
   }
 }
 
-export default useExpenseChart
+export default useOverviewChart

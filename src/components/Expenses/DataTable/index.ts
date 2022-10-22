@@ -1,1 +1,1 @@
-export { default } from './ExpenseTable'
+export { default } from './DataTable'

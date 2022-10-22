@@ -1,16 +1,16 @@
 import React from 'react';
 import { Table } from 'antd';
-import useExpenseTable from "./useExpenseTable";
+import useDataTable from "./useDataTable";
 
-const ExpenseTable: React.FC = () => {
+const DataTable: React.FC = () => {
   const {
     data,
     columns
-  } = useExpenseTable()
+  } = useDataTable()
 
   return (
     <Table size={"small"} bordered dataSource={data} columns={columns}/>
   )
 }
 
-export default ExpenseTable
+export default DataTable

@@ -1,15 +1,15 @@
 import React from 'react';
 import { Pie } from '@ant-design/plots';
-import useExpenseChart from "./useExpenseChart";
+import useOverviewChart from "./useOverviewChart";
 
-const ExpenseChart: React.FC = () => {
+const OverviewChart: React.FC = () => {
   const {
     config
-  } = useExpenseChart()
+  } = useOverviewChart()
 
   return(
     <Pie {...config} />
   )
 }
 
-export default ExpenseChart
+export default OverviewChart

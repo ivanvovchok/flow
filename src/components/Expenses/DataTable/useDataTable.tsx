@@ -8,7 +8,7 @@ interface DataType {
   date: string
 }
 
-const useExpenseTable = () => {
+const useDataTable = () => {
   const columns: ColumnsType<DataType> = [
     {
       title: 'Назва',
@@ -69,4 +69,4 @@ const useExpenseTable = () => {
   }
 }
 
-export default useExpenseTable
+export default useDataTable
