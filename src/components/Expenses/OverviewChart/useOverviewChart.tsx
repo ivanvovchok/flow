@@ -37,7 +37,7 @@ const useOverviewChart = () => {
     angleField: 'value',
     colorField: 'type',
     radius: 1,
-    innerRadius: 0.6,
+    innerRadius: 0.7,
     label: {
       type: 'inner',
       offset: '-50%',
