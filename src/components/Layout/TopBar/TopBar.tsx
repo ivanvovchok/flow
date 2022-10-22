@@ -38,7 +38,7 @@ const TopBar: React.FC<ITopBarProps> = ({total}) => {
             }}
           />
           <Popover content={<UserCard/>} placement={"bottomRight"}>
-            <Avatar size={"large"} style={{ backgroundColor: '#FFCC70' }} icon={<UserOutlined />} />
+            <Avatar size={"large"} style={{ backgroundColor: '#FFCC70', cursor: 'pointer' }} icon={<UserOutlined />} />
           </Popover>
         </Row>
       </Col>
