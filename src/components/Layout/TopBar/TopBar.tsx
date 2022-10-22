@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Button, Divider } from 'antd';
+import { Row, Col, Button } from 'antd';
 import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
 
 interface ITopBarProps {
@@ -8,16 +8,9 @@ interface ITopBarProps {
 
 const TopBar: React.FC<ITopBarProps> = ({total}) => {
   return (
-      <Row
-        align={"middle"}
-      >
-        <Col
-          span={24}
-        >
-          <Row
-            justify={"end"}
-            align={"middle"}
-          >
+      <Row align={"middle"}>
+        <Col span={24}>
+          <Row justify={"end"} align={"middle"}>
             <div
               style={{
                 marginRight:20,
