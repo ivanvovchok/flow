@@ -1,7 +1,10 @@
-import React from 'react';
+interface DataType {
+  type: string;
+  value: number;
+}
 
 const useOverviewChart = () => {
-  const data = [
+  const data: DataType[] = [
     {
       type: '分类一',
       value: 27,
@@ -67,7 +70,7 @@ const useOverviewChart = () => {
 
   return {
     config
-  }
+  };
 }
 
 export default useOverviewChart
