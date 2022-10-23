@@ -1,6 +1,6 @@
-const useCreateEntryForm = () => {
+const useCreateEntry = () => {
 
   return {}
 }
 
-export default useCreateEntryForm
+export default useCreateEntry

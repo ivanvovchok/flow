@@ -1,1 +1,1 @@
-export {default} from './CreateEntryForm'
+export {default} from './CreateEntry'

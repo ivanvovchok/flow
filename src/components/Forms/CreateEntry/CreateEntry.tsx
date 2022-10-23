@@ -1,6 +1,7 @@
 import React, {Dispatch, SetStateAction} from "react";
 import {Drawer} from "antd";
 import HeaderSection from "./HeaderSection";
+import CreateEntryForm from "./CreateEntryForm";
 
 interface ICreateEntryFormProps {
   isVisible: boolean
@@ -9,7 +10,7 @@ interface ICreateEntryFormProps {
 }
 
 
-const CreateEntryForm: React.FC<ICreateEntryFormProps> = ({isVisible, entryType, onClose}) => {
+const CreateEntry: React.FC<ICreateEntryFormProps> = ({isVisible, entryType, onClose}) => {
   const title: string = entryType === 'outcome' ?
     'Додайте нову витрату' :
     'Додайте новий дохід';
@@ -25,13 +26,10 @@ const CreateEntryForm: React.FC<ICreateEntryFormProps> = ({isVisible, entryType,
       onClose={hideDrawer}
       open={isVisible}
     >
-      <HeaderSection entryType={entryType} />
-
-      <p>Some contents...</p>
-      <p>Some contents...</p>
-      <p>Some contents...</p>
+      <HeaderSection entryType={entryType}/>
+      <CreateEntryForm entryType={entryType} onClose={hideDrawer}/>
     </Drawer>
   );
 }
 
-export default CreateEntryForm
+export default CreateEntry

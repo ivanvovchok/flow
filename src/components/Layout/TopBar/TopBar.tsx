@@ -4,7 +4,7 @@ import {MinusOutlined, PlusOutlined, UserOutlined} from '@ant-design/icons';
 import Logo from "./Logo";
 import UserProfile from "./UserProfile";
 import RangeSelector from "./RangeSelector";
-import CreateEntryForm from "../../Forms/CreateEntryForm";
+import CreateEntry from "../../Forms/CreateEntry";
 import useTopBar from "./useTopBar";
 
 interface ITopBarProps {
@@ -68,7 +68,7 @@ const TopBar: React.FC<ITopBarProps> = ({total}) => {
           </Row>
         </Col>
       </Row>
-      <CreateEntryForm
+      <CreateEntry
         isVisible={isCreateEntryFormVisible}
         entryType={currentEntryType}
         onClose={() => {
