@@ -1,5 +1,5 @@
 import React, {Dispatch, SetStateAction} from "react";
-import {Avatar, Drawer, Statistic} from 'antd';
+import {Avatar, Drawer, Row, Col, Statistic} from 'antd';
 
 interface IUserProfileProps {
   isVisible: boolean
@@ -21,7 +21,7 @@ const UserProfile: React.FC<IUserProfileProps> = ({isVisible, onClose}) => {
     >
       <div
         style={{
-          marginBottom: 20,
+          marginBottom: 40,
           padding: 4,
           borderRadius: 16,
           backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)'
@@ -54,7 +54,36 @@ const UserProfile: React.FC<IUserProfileProps> = ({isVisible, onClose}) => {
         precision={2}
         valueStyle={{color: '#3f8600'}}
         suffix="грн."
+        style={{
+          marginBottom: 20
+        }}
       />
+      <Row>
+        <Col span={12}>
+          <Statistic
+            title="Витрачено сьогодні"
+            value={550}
+            precision={0}
+            valueStyle={{color: '#cf1322'}}
+            style={{
+              marginBottom: 20
+            }}
+            suffix="грн."
+          />
+        </Col>
+        <Col span={12}>
+          <Statistic
+            title="Зароблено сьогодні"
+            value={3600}
+            precision={0}
+            valueStyle={{color: '#3f8600'}}
+            style={{
+              marginBottom: 20
+            }}
+            suffix="грн."
+          />
+        </Col>
+      </Row>
     </Drawer>
   )
 }
