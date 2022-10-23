@@ -64,9 +64,6 @@ const TopBar: React.FC<ITopBarProps> = ({total}) => {
               onClick={() => {
                 setUserProfileVisible(true)
               }}
-              style={{
-                marginRight: 10
-              }}
             />
           </Row>
         </Col>
