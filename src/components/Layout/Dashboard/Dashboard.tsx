@@ -27,7 +27,7 @@ const Dashboard: React.FC = () => {
               <Tabs.TabPane tab="Витрати" key="1">
                 <OverviewChart/>
               </Tabs.TabPane>
-              <Tabs.TabPane tab="Доходи " key="2">
+              <Tabs.TabPane tab="Доходи" key="2">
                 <OverviewChart/>
               </Tabs.TabPane>
             </Tabs>
