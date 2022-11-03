@@ -8,6 +8,7 @@ const DashboardWrapper: React.FC<IDashboardWrapperProps> = ({children}) => {
 
   return (
     <div style={{
+      minHeight: '100vh',
       padding: 16,
       backgroundColor: '#4158D0',
       backgroundImage: 'linear-gradient(90deg, #0093E9 0%, #80D0C7 100%)'
