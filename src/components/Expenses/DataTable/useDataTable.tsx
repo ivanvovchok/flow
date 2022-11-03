@@ -1,9 +1,11 @@
 import React from 'react';
 import type {ColumnsType} from 'antd/es/table';
+import {Button} from "antd";
+import {EditOutlined, DeleteOutlined} from "@ant-design/icons";
 import CategoryApi from "../../../api/category.api";
 
 interface DataType {
-  key: string;
+  id: number;
   name: string;
   amount: number;
   category: string;
@@ -37,34 +39,53 @@ const useDataTable = () => {
     },
     {
       title: 'Дії',
-      key: 'date'
+      key: 'date',
+      render: (record) => {
+        return (
+          <>
+            <Button
+              shape={"circle"}
+              icon={<EditOutlined />}
+              style={{
+                marginRight: 10
+              }}
+            />
+            <Button
+              danger
+              type={"primary"}
+              shape={"circle"}
+              icon={<DeleteOutlined />}
+            />
+          </>
+          )
+      }
     }
   ];
 
   const data: DataType[] = [
     {
-      key: '1',
+      id: 1,
       name: 'Піца',
       amount: 250,
       category: 'Їжа',
       date: '15.10.2022'
     },
     {
-      key: '2',
+      id: 2,
       name: 'Рахунок за воду',
       amount: 130,
       category: 'Комунальні платежі',
       date: '16.10.2022'
     },
     {
-      key: '3',
+      id: 3,
       name: 'Шампунь',
       amount: 200,
       category: 'Гігієна',
       date: '16.10.2022'
     },
     {
-      key: '4',
+      id: 4,
       name: 'Книга',
       amount: 450,
       category: 'Розваги',
