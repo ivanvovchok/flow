@@ -1,4 +1,6 @@
+import React from 'react';
 import type {ColumnsType} from 'antd/es/table';
+import CategoryApi from "../../../api/category.api";
 
 interface DataType {
   key: string;
@@ -13,23 +15,30 @@ const useDataTable = () => {
     {
       title: 'Назва',
       dataIndex: 'name',
-      key: 'name'
+      key: 'name',
+      sorter: (a, b) => a.name.localeCompare(b.name)
     },
     {
       title: 'Сума',
       dataIndex: 'amount',
-      key: 'amount'
+      key: 'amount',
+      sorter: (a, b) => a.amount - b.amount,
     },
     {
       title: 'Категорія',
       dataIndex: 'category',
-      key: 'category'
+      key: 'category',
+      sorter: (a, b) => a.category.localeCompare(b.category)
     },
     {
       title: 'Дата',
       dataIndex: 'date',
       key: 'date'
     },
+    {
+      title: 'Дії',
+      key: 'date'
+    }
   ];
 
   const data: DataType[] = [
@@ -62,6 +71,10 @@ const useDataTable = () => {
       date: '16.10.2022'
     },
   ];
+
+  React.useEffect(() => {
+    console.log(CategoryApi.get());
+  });
 
   return {
     columns,
